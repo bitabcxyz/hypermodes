@@ -1,100 +1,74 @@
-1|<!DOCTYPE html>
-2|<html lang="en">
-3|<head>
-4|<meta charset="UTF-8">
-5|<meta name="viewport" content="width=device-width,initial-scale=1.0">
-6|<title>Demo Access — Hypermodes</title>
-7|<meta name="description" content="Hypermodes Demo Access — How to sign up and explore the app.">
-8|<link rel="icon" href="assets/app-icon.svg" type="image/svg+xml">
-9|<link rel="stylesheet" href="css/style.css">
-10|</head>
-11|<body>
-12|
-13|<div class="formula-bg" aria-hidden="true">R<sub>s</sub> = 2GM/c²</div>
-14|
-15|<nav>
-16|  <div class="nav-inner">
-17|    <a href="index.html" class="nav-brand">
-18|      <svg viewBox="0 0 200 200" width="26" height="26"><defs><linearGradient id="g" x1="0" y1="0" x2="200" y2="200"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient></defs><rect width="200" height="200" rx="40" fill="url(#g)"/><path d="M64 64h26l20 36 20-36h26l-42 72h-8L64 64z" fill="#fff"/><path d="M130 64h16l-30 72h-16l30-72z" fill="rgba(255,255,255,0.6)"/></svg>
-19|      Hypermodes
-20|    </a>
-21|    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
-22|    <ul class="nav-links">
-23|      <li><a href="index.html">Home</a></li>
-24|      <li><a href="privacy.html">Privacy</a></li>
-25|      <li><a href="terms.html">Terms</a></li>
-26|      <li><a href="support.html">Support</a></li>
-27|      <li><a href="demo.html" class="active">Demo</a></li>
-28|    </ul>
-29|  </div>
-30|</nav>
-31|
-32|<main>
-33|  <div class="container">
-34|    <div class="page-header">
-35|      <div class="formula-display">R<sub>s</sub> = 2GM / c²</div>
-36|      <h1>Demo Access</h1>
-37|      <p class="page-subtitle">跨越事件视界 — 进入 Hypermodes 的世界</p>
-38|    </div>
-39|
-40|    <!-- Highlight -->
-41|    <div class="highlight-box">
-42|      <div class="formula-inset">∀ email ∈ ℂ → access granted</div>
-43|      <h3>无需 Demo 账号 — 直接注册即可</h3>
-44|      <p>Hypermodes 支持任意邮箱注册。从 App Store 下载应用，打开后按照注册流程操作即可。</p>
-45|      <div class="tag">任何邮箱均可使用 &nbsp;·&nbsp; No invitation code needed</div>
-46|      <p style="margin-top:13px;font-size:13px;color:var(--text-muted)">Apple Review Team: Please use any email address to sign up and explore all features.</p>
-47|    </div>
-48|
-49|    <!-- Steps -->
-50|    <div class="content-card">
-51|      <div class="content">
-52|        <h2 style="margin-top:0">探索步骤</h2>
-53|        <ol class="step-list">
-54|          <li><strong>下载 (Download)</strong><span>从 App Store 安装 Hypermodes</span></li>
-55|          <li><strong>注册 (Sign Up)</strong><span>点击 "Sign Up"，输入任意邮箱。您将收到验证码。</span></li>
-56|          <li><strong>设置资料 (Set Up Profile)</strong><span>选择展示名称，可选添加头像和简介</span></li>
-57|          <li><strong>探索 (Explore)</strong><span>浏览社区、发布内容、与他人互动、发现世界</span></li>
-58|        </ol>
-59|      </div>
-60|    </div>
-61|
-62|    <!-- Features -->
-63|    <div class="content-card">
-64|      <div class="content">
-65|        <h2 style="margin-top:0">Review 要点</h2>
-66|        <ul>
-67|          <li><strong>Feed</strong> — 个性化内容流，来自您关注的社区</li>
-68|          <li><strong>社区 (Communities)</strong> — 按兴趣发现和加入社区</li>
-69|          <li><strong>创作 (Create)</strong> — 发布文字、图像，与其他用户互动</li>
-70|          <li><strong>个人资料 (Profile)</strong> — 自定义资料、查看活动、管理设置</li>
-71|          <li><strong>隐私控制</strong> — 管理谁能看到您的内容和互动</li>
-72|        </ul>
-73|      </div>
-74|    </div>
-75|
-76|    <!-- Notes -->
-77|    <div class="content-card">
-78|      <div class="content">
-79|        <h2 style="margin-top:0">审查注意事项</h2>
-80|        <ul>
-81|          <li>邮箱验证码将发送至您提供的邮箱地址</li>
-82|          <li>注册后立即可体验完整功能</li>
-83|          <li>可自由创建、编辑、删除自己的内容</li>
-84|          <li>账户可从 Profile → Settings 随时删除</li>
-85|        </ul>
-86|      </div>
-87|    </div>
-88|  </div>
-89|</main>
-90|
-91|<footer>
-92|  <div class="container">
-93|    <p>&copy; 2026 Hypermodes. All rights reserved. &nbsp;·&nbsp; <a href="privacy.html">Privacy</a> &nbsp;·&nbsp; <a href="terms.html">Terms</a> &nbsp;·&nbsp; <a href="support.html">Support</a></p>
-94|  </div>
-95|</footer>
-96|
-97|<script>const p=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.nav-links a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')===p));</script>
-98|</body>
-99|</html>
-100|
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Demo Access — Hypermodes</title>
+<meta name="description" content="Hypermodes Demo Access">
+<link rel="icon" href="assets/app-icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="spiralCanvas" class="spiral-decor"></canvas>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <svg viewBox="0 0 200 200" width="24" height="24"><defs><linearGradient id="g" x1="0" y1="0" x2="200" y2="200"><stop offset="0%" stop-color="#8b5cf6"/><stop offset="100%" stop-color="#22d3ee"/></linearGradient></defs><rect width="200" height="200" rx="40" fill="url(#g)"/><path d="M64 64h26l20 36 20-36h26l-42 72h-8L64 64z" fill="#fff"/><path d="M130 64h16l-30 72h-16l30-72z" fill="rgba(255,255,255,0.6)"/></svg>
+      Hypermodes
+    </a>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="support.html">Support</a></li>
+      <li><a href="demo.html" class="active">Demo</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+    <div class="page-hd">
+      <div class="formula">R<span style="font-size:14px">s</span> = 2GM / c&#178;</div>
+      <h1>Demo Access</h1>
+      <p class="sub">跨越事件视界 — 进入 Hypermodes 世界</p>
+    </div>
+
+    <div class="hl-box">
+      <div class="big-formula">&#8704; email &#8712; &#8450; &#8594; access</div>
+      <h3>无需特殊 Demo 账号</h3>
+      <p>Hypermodes 支持任意邮箱注册。从 App Store 下载应用，打开注册即可。</p>
+      <div class="hl-tag">任何邮箱均可 &nbsp;·&nbsp; No code needed</div>
+      <p style="margin-top:10px;font-size:12px;opacity:.6">Apple Review: Use any email to sign up.</p>
+    </div>
+
+    <div class="c-card">
+      <h2>Explore Steps</h2>
+      <ol class="steps">
+        <li><strong>Download</strong><span>从 App Store 安装 Hypermodes</span></li>
+        <li><strong>Sign Up</strong><span>点击 Sign Up，输入任意邮箱，收取验证码</span></li>
+        <li><strong>Set Profile</strong><span>选择展示名称，可选头像和简介</span></li>
+        <li><strong>Explore</strong><span>浏览社区、发布内容、互动、发现</span></li>
+      </ol>
+    </div>
+
+    <div class="c-card">
+      <h2>Key Features</h2>
+      <ul>
+        <li><strong>Feed</strong> — 个性化内容流</li>
+        <li><strong>Communities</strong> — 按兴趣发现和加入</li>
+        <li><strong>Create</strong> — 发布文字、图像</li>
+        <li><strong>Profile</strong> — 自定义资料和管理</li>
+        <li><strong>Privacy Controls</strong> — 内容可见性管理</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<footer><div class="container"><p>&copy; 2026 Hypermodes &nbsp;·&nbsp; <a href="privacy.html">Privacy</a> &nbsp;·&nbsp; <a href="terms.html">Terms</a> &nbsp;·&nbsp; <a href="support.html">Support</a></p></div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>

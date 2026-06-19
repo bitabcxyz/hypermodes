@@ -1,115 +1,97 @@
-1|<!DOCTYPE html>
-2|<html lang="en">
-3|<head>
-4|<meta charset="UTF-8">
-5|<meta name="viewport" content="width=device-width,initial-scale=1.0">
-6|<title>Hypermodes — Connect Beyond Modes</title>
-7|<meta name="description" content="Hypermodes is a social app that connects people across different modes of expression. Discover, share, and connect.">
-8|<link rel="icon" href="assets/app-icon.svg" type="image/svg+xml">
-9|<link rel="stylesheet" href="css/style.css">
-10|</head>
-11|<body>
-12|
-13|<nav>
-14|  <div class="nav-inner">
-15|    <a href="index.html" class="nav-brand">
-16|      <svg viewBox="0 0 200 200"><defs><linearGradient id="g" x1="0" y1="0" x2="200" y2="200"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient></defs><rect width="200" height="200" rx="40" fill="url(#g)"/><path d="M64 64h26l20 36 20-36h26l-42 72h-8L64 64z" fill="#fff"/><path d="M130 64h16l-30 72h-16l30-72z" fill="rgba(255,255,255,0.6)"/></svg>
-17|      Hypermodes
-18|    </a>
-19|    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
-20|    <ul class="nav-links">
-21|      <li><a href="index.html" class="active">Home</a></li>
-22|      <li><a href="privacy.html">Privacy</a></li>
-23|      <li><a href="terms.html">Terms</a></li>
-24|      <li><a href="support.html">Support</a></li>
-25|      <li><a href="demo.html">Demo</a></li>
-26|    </ul>
-27|  </div>
-28|</nav>
-29|
-30|<main>
-31|  <div class="container">
-32|
-33|    <!-- Hero -->
-34|    <section class="hero">
-35|      <div class="hero-pi" aria-hidden="true">
-36|        3.1415926535 8979323846 2643383279 5028841971 6939937510
-37|        5820974944 5923078164 0628620899 8628034825 3421170679
-38|        8214808651 3282306647 0938446095 5058223172 5359408128
-39|        4811174502 8410270193 8521105559 6446229489 5493038196
-40|        4428810975 6659334461 2847564823 3786783165 2712019091
-41|        4564856692 3460348610 4543266482 1339360726 0249141273
-42|      </div>
-43|      <div class="hero-logo">
-44|        <svg viewBox="0 0 200 200"><path d="M64 64h26l20 36 20-36h26l-42 72h-8L64 64z" fill="#fff"/><path d="M130 64h16l-30 72h-16l30-72z" fill="rgba(255,255,255,0.6)"/></svg>
-45|      </div>
-46|      <h1>Hypermodes</h1>
-47|      <p class="subtitle">连接超越维度。每一个节点，都是无限宇宙的入口。</p>
-48|      <div class="formula-tag">π = 3.1415926535…  infinite, non-repeating</div>
-49|      <div class="quick-links">
-50|        <a href="privacy.html" class="quick-link">Privacy</a>
-51|        <a href="terms.html" class="quick-link">Terms</a>
-52|        <a href="support.html" class="quick-link">Support</a>
-53|        <a href="demo.html" class="quick-link">Demo Access</a>
-54|      </div>
-55|    </section>
-56|
-57|    <!-- Concept Grid -->
-58|    <div class="concept-grid">
-59|      <div class="concept-card">
-60|        <div class="concept-formula">π</div>
-61|        <div class="concept-name">无限连结 · Infinite Connections</div>
-62|        <div class="concept-title">永不重复的关系网络</div>
-63|        <div class="concept-desc">如同圆周率 π 的无限不循环，Hypermodes 上每一次连接都是独一无二的。发现与您共鸣的人与社区，每条路径都不重复。</div>
-64|      </div>
-65|      <div class="concept-card">
-66|        <div class="concept-formula">φ ≈ 1.618</div>
-67|        <div class="concept-name">自然生长 · Natural Growth</div>
-68|        <div class="concept-title">斐波那契式的社区演化</div>
-69|        <div class="concept-desc">黄金比例支配着宇宙中一切美的生长。您的社区像向日葵的花序一样，以最自然、最优雅的方式壮大。</div>
-70|      </div>
-71|      <div class="concept-card">
-72|        <div class="concept-formula">E = mc²</div>
-73|        <div class="concept-name">释放创造 · Creative Energy</div>
-74|        <div class="concept-title">质量的平方转化为能量</div>
-75|        <div class="concept-desc">你的一切表达——文字、图片、思想——都是质量。Hypermodes 将它们转化为影响力的能量，让创造连接世界。</div>
-76|      </div>
-77|      <div class="concept-card">
-78|        <div class="concept-formula">Rₛ = 2GM/c²</div>
-79|        <div class="concept-name">引力聚集 · Gravitational Pull</div>
-80|        <div class="concept-title">事件视界汇聚同类灵魂</div>
-81|        <div class="concept-desc">正如黑洞的史瓦西半径将一切拉向中心，Hypermodes 的热点话题和活跃社区形成了不可抗拒的引力场，将志趣相投的人聚集在一起。</div>
-82|      </div>
-83|    </div>
-84|
-85|    <!-- Intro -->
-86|    <div class="intro-section">
-87|      <div class="section-label">// what is hypermodes</div>
-88|      <h2>Welcome to Hypermodes</h2>
-89|      <div class="content">
-90|        <p>Hypermodes 是一个社交网络应用，融合了多维表达方式——文字、图像、社区——让你以自己的"模式"发现世界、分享自我、连接他人。</p>
-91|        <ul>
-92|          <li><strong>发现 (Discover)</strong> — 找到与您兴趣匹配的人和社区</li>
-93|          <li><strong>分享 (Share)</strong> — 通过多种内容格式自由表达</li>
-94|          <li><strong>连接 (Connect)</strong> — 与世界各地的人建立真正的联系</li>
-95|          <li><strong>创造 (Create)</strong> — 围绕任何主题创建或加入社区</li>
-96|        </ul>
-97|      </div>
-98|    </div>
-99|
-100|  </div>
-101|</main>
-102|
-103|<footer>
-104|  <div class="container">
-105|    <p>&copy; 2026 Hypermodes. All rights reserved. &nbsp;·&nbsp; <a href="privacy.html">Privacy</a> &nbsp;·&nbsp; <a href="terms.html">Terms</a> &nbsp;·&nbsp; <a href="support.html">Support</a></p>
-106|  </div>
-107|</footer>
-108|
-109|<script>
-110|const p=location.pathname.split('/').pop()||'index.html';
-111|document.querySelectorAll('.nav-links a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')===p));
-112|</script>
-113|</body>
-114|</html>
-115|
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Hypermodes — Connect Beyond Modes</title>
+<meta name="description" content="Hypermodes is a social app. Discover, share, connect.">
+<link rel="icon" href="assets/app-icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="piCanvas"></canvas>
+<canvas id="spiralCanvas" class="spiral-decor"></canvas>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <svg viewBox="0 0 200 200"><defs><linearGradient id="g" x1="0" y1="0" x2="200" y2="200"><stop offset="0%" stop-color="#8b5cf6"/><stop offset="100%" stop-color="#22d3ee"/></linearGradient></defs><rect width="200" height="200" rx="40" fill="url(#g)"/><path d="M64 64h26l20 36 20-36h26l-42 72h-8L64 64z" fill="#fff"/><path d="M130 64h16l-30 72h-16l30-72z" fill="rgba(255,255,255,0.6)"/></svg>
+      Hypermodes
+    </a>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="support.html">Support</a></li>
+      <li><a href="demo.html">Demo</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+
+    <section class="hero">
+      <div class="hero-logo">
+        <svg viewBox="0 0 200 200"><path d="M64 64h26l20 36 20-36h26l-42 72h-8L64 64z" fill="#fff"/><path d="M130 64h16l-30 72h-16l30-72z" fill="rgba(255,255,255,0.6)"/></svg>
+      </div>
+      <h1>Hypermodes</h1>
+      <p class="tagline">每个节点，都是无限宇宙的入口</p>
+      <div class="quick-nav">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+        <a href="demo.html">Demo Access</a>
+      </div>
+    </section>
+
+    <div class="features">
+      <div class="feat-card">
+        <div class="feat-icon">&#960;</div>
+        <div class="feat-title">Infinite Connection</div>
+        <div class="feat-desc">如同 &#960; 无限不循环，每一条路径都是独一无二的发现之旅。</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">&#966; &#8776; 1.618</div>
+        <div class="feat-title">Natural Growth</div>
+        <div class="feat-desc">斐波那契式的社区演化——以最优雅的方式自然壮大。</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">E = mc&#178;</div>
+        <div class="feat-title">Creative Energy</div>
+        <div class="feat-desc">每一次表达都是质量，转化为影响力的能量。</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">R<span style="font-size:14px">s</span> = 2GM/c&#178;</div>
+        <div class="feat-title">Gravity</div>
+        <div class="feat-desc">黑洞凝聚同类——志趣相投的灵魂在引力中汇聚。</div>
+      </div>
+    </div>
+
+    <div class="about">
+      <h2>Welcome to Hypermodes</h2>
+      <p>一个社交网络平台，融合文字、图像、社区——让你以自己的模式发现、分享、连接。</p>
+      <ul>
+        <li><strong>Discover</strong> — 找到与您共鸣的人和社区</li>
+        <li><strong>Share</strong> — 通过多种格式自由表达</li>
+        <li><strong>Connect</strong> — 与世界各地的人建立联结</li>
+        <li><strong>Create</strong> — 创建或加入任何主题的社区</li>
+      </ul>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2026 Hypermodes &nbsp;·&nbsp; <a href="privacy.html">Privacy</a> &nbsp;·&nbsp; <a href="terms.html">Terms</a> &nbsp;·&nbsp; <a href="support.html">Support</a></p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
