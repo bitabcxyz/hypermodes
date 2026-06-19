@@ -1,143 +1,114 @@
-1|<!DOCTYPE html>
-2|<html lang="en">
-3|<head>
-4|  <meta charset="UTF-8">
-5|  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-6|  <title>Hypernodes — Connect Beyond Modes</title>
-7|  <meta name="description" content="Hypernodes is a social app that connects people across different modes of expression. Discover, share, and connect.">
-8|  <link rel="icon" href="assets/app-icon.svg" type="image/svg+xml">
-9|  <link rel="stylesheet" href="css/style.css">
-10|</head>
-11|<body>
-12|
-13|<nav>
-14|  <div class="nav-inner">
-15|    <a href="index.html" class="nav-logo">
-16|      <svg viewBox="0 0 200 200" fill="none">
-17|        <defs><linearGradient id="g" x1="0" y1="0" x2="200" y2="200"><stop offset="0%" stop-color="#6c63ff"/><stop offset="100%" stop-color="#a855f7"/></linearGradient></defs>
-18|        <rect width="200" height="200" rx="40" fill="url(#g)"/>
-19|        <path d="M64 64h26l20 36 20-36h26l-42 72h-8L64 64z" fill="#fff"/>
-20|        <path d="M130 64h16l-30 72h-16l30-72z" fill="rgba(255,255,255,0.6)"/>
-21|      </svg>
-22|      Hypernodes
-23|    </a>
-24|    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle navigation">
-25|      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-26|    </button>
-27|    <ul class="nav-links">
-28|      <li><a href="index.html" class="active">Home</a></li>
-29|      <li><a href="privacy.html">Privacy</a></li>
-30|      <li><a href="terms.html">Terms</a></li>
-31|      <li><a href="support.html">Support</a></li>
-32|      <li><a href="demo.html">Demo</a></li>
-33|    </ul>
-34|  </div>
-35|</nav>
-36|
-37|<main>
-38|  <div class="container">
-39|    <section class="hero">
-40|      <div class="hero-logo">
-41|        <svg viewBox="0 0 200 200" fill="none">
-42|          <path d="M64 64h26l20 36 20-36h26l-42 72h-8L64 64z" fill="#fff"/>
-43|          <path d="M130 64h16l-30 72h-16l30-72z" fill="rgba(255,255,255,0.6)"/>
-44|        </svg>
-45|      </div>
-46|      <h1>Hypernodes</h1>
-47|      <p>Connect beyond modes. Hypernodes is a social platform where you can express yourself freely, discover communities that match your vibe, and connect with people who share your passions — across text, images, and beyond.</p>
-48|      <div class="hero-badges">
-49|        <a href="privacy.html" class="badge">
-50|          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-51|          Privacy Policy
-52|        </a>
-53|        <a href="terms.html" class="badge">
-54|          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-55|          Terms of Service
-56|        </a>
-57|        <a href="support.html" class="badge">
-58|          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-59|          Support
-60|        </a>
-61|        <a href="demo.html" class="badge">
-62|          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M13 12H3"/></svg>
-63|          Demo Access
-64|        </a>
-65|      </div>
-66|    </section>
-67|
-68|    <div class="card">
-69|      <div class="card-title">Welcome to Hypernodes</div>
-70|      <div class="card-subtitle">A new way to connect and express yourself</div>
-71|      <div class="content">
-72|        <p>Hypernodes is a social networking application designed to help you discover, share, and connect in ways that feel natural to you. Whether you prefer text, images, or a mix of both, Hypernodes adapts to your mode of expression.</p>
-73|        <p>Our platform brings together communities built around shared interests, creative expression, and meaningful conversations. With Hypernodes, you can:</p>
-74|        <ul>
-75|          <li><strong>Discover</strong> — Find communities and people that match your interests</li>
-76|          <li><strong>Share</strong> — Express yourself through multiple content formats</li>
-77|          <li><strong>Connect</strong> — Build real connections with people around the world</li>
-78|          <li><strong>Create</strong> — Join or create communities around any topic</li>
-79|        </ul>
-80|      </div>
-81|    </div>
-82|
-83|    <div class="card">
-84|      <div class="card-title">Quick Links for App Review</div>
-85|      <div class="card-subtitle">Information required for Apple App Store review</div>
-86|      <div class="content" style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 16px;">
-87|        <a href="privacy.html" style="flex:1; min-width:200px; display:flex; align-items:center; gap:12px; padding:16px 20px; background:var(--bg-card); border:1px solid var(--border-glass); border-radius:var(--radius-sm); text-decoration:none; color:var(--text-primary); transition:all 0.2s;">
-88|          <div style="width:40px;height:40px;border-radius:10px;background:var(--gradient-glow);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-89|            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-90|          </div>
-91|          <div>
-92|            <div style="font-weight:600;font-size:14px;">Privacy Policy</div>
-93|            <div style="font-size:12px;color:var(--text-muted);">How we handle your data</div>
-94|          </div>
-95|        </a>
-96|        <a href="terms.html" style="flex:1;min-width:200px;display:flex;align-items:center;gap:12px;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border-glass);border-radius:var(--radius-sm);text-decoration:none;color:var(--text-primary);transition:all 0.2s;">
-97|          <div style="width:40px;height:40px;border-radius:10px;background:var(--gradient-glow);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-98|            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6c63ff" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-99|          </div>
-100|          <div>
-101|            <div style="font-weight:600;font-size:14px;">Terms of Service</div>
-102|            <div style="font-size:12px;color:var(--text-muted);">Rules and guidelines</div>
-103|          </div>
-104|        </a>
-105|        <a href="support.html" style="flex:1;min-width:200px;display:flex;align-items:center;gap:12px;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border-glass);border-radius:var(--radius-sm);text-decoration:none;color:var(--text-primary);transition:all 0.2s;">
-106|          <div style="width:40px;height:40px;border-radius:10px;background:var(--gradient-glow);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-107|            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-108|          </div>
-109|          <div>
-110|            <div style="font-weight:600;font-size:14px;">Support</div>
-111|            <div style="font-size:12px;color:var(--text-muted);">Get help &amp; contact us</div>
-112|          </div>
-113|        </a>
-114|        <a href="demo.html" style="flex:1;min-width:200px;display:flex;align-items:center;gap:12px;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border-glass);border-radius:var(--radius-sm);text-decoration:none;color:var(--text-primary);transition:all 0.2s;">
-115|          <div style="width:40px;height:40px;border-radius:10px;background:var(--gradient-glow);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-116|            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6c63ff" stroke-width="2"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M13 12H3"/></svg>
-117|          </div>
-118|          <div>
-119|            <div style="font-weight:600;font-size:14px;">Demo Access</div>
-120|            <div style="font-size:12px;color:var(--text-muted);">How to sign up and explore</div>
-121|          </div>
-122|        </a>
-123|      </div>
-124|    </div>
-125|  </div>
-126|</main>
-127|
-128|<footer>
-129|  <div class="container">
-130|    <p>&copy; 2026 Hypernodes. All rights reserved. | <a href="privacy.html">Privacy</a> | <a href="terms.html">Terms</a> | <a href="support.html">Support</a></p>
-131|  </div>
-132|</footer>
-133|
-134|<script>
-135|  // Highlight current page in nav
-136|  const page = location.pathname.split('/').pop() || 'index.html';
-137|  document.querySelectorAll('.nav-links a').forEach(a => {
-138|    a.classList.toggle('active', a.getAttribute('href') === page);
-139|  });
-140|</script>
-141|</body>
-142|</html>
-143|
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Hypernodes — Connect Beyond Modes</title>
+<meta name="description" content="Hypernodes is a social app that connects people across different modes of expression. Discover, share, and connect.">
+<link rel="icon" href="assets/app-icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <svg viewBox="0 0 200 200"><defs><linearGradient id="g" x1="0" y1="0" x2="200" y2="200"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient></defs><rect width="200" height="200" rx="40" fill="url(#g)"/><path d="M64 64h26l20 36 20-36h26l-42 72h-8L64 64z" fill="#fff"/><path d="M130 64h16l-30 72h-16l30-72z" fill="rgba(255,255,255,0.6)"/></svg>
+      Hypernodes
+    </a>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="support.html">Support</a></li>
+      <li><a href="demo.html">Demo</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-pi" aria-hidden="true">
+        3.1415926535 8979323846 2643383279 5028841971 6939937510
+        5820974944 5923078164 0628620899 8628034825 3421170679
+        8214808651 3282306647 0938446095 5058223172 5359408128
+        4811174502 8410270193 8521105559 6446229489 5493038196
+        4428810975 6659334461 2847564823 3786783165 2712019091
+        4564856692 3460348610 4543266482 1339360726 0249141273
+      </div>
+      <div class="hero-logo">
+        <svg viewBox="0 0 200 200"><path d="M64 64h26l20 36 20-36h26l-42 72h-8L64 64z" fill="#fff"/><path d="M130 64h16l-30 72h-16l30-72z" fill="rgba(255,255,255,0.6)"/></svg>
+      </div>
+      <h1>Hypernodes</h1>
+      <p class="subtitle">连接超越维度。每一个节点，都是无限宇宙的入口。</p>
+      <div class="formula-tag">π = 3.1415926535…  infinite, non-repeating</div>
+      <div class="quick-links">
+        <a href="privacy.html" class="quick-link">Privacy</a>
+        <a href="terms.html" class="quick-link">Terms</a>
+        <a href="support.html" class="quick-link">Support</a>
+        <a href="demo.html" class="quick-link">Demo Access</a>
+      </div>
+    </section>
+
+    <!-- Concept Grid -->
+    <div class="concept-grid">
+      <div class="concept-card">
+        <div class="concept-formula">π</div>
+        <div class="concept-name">无限连结 · Infinite Connections</div>
+        <div class="concept-title">永不重复的关系网络</div>
+        <div class="concept-desc">如同圆周率 π 的无限不循环，Hypernodes 上每一次连接都是独一无二的。发现与您共鸣的人与社区，每条路径都不重复。</div>
+      </div>
+      <div class="concept-card">
+        <div class="concept-formula">φ ≈ 1.618</div>
+        <div class="concept-name">自然生长 · Natural Growth</div>
+        <div class="concept-title">斐波那契式的社区演化</div>
+        <div class="concept-desc">黄金比例支配着宇宙中一切美的生长。您的社区像向日葵的花序一样，以最自然、最优雅的方式壮大。</div>
+      </div>
+      <div class="concept-card">
+        <div class="concept-formula">E = mc²</div>
+        <div class="concept-name">释放创造 · Creative Energy</div>
+        <div class="concept-title">质量的平方转化为能量</div>
+        <div class="concept-desc">你的一切表达——文字、图片、思想——都是质量。Hypernodes 将它们转化为影响力的能量，让创造连接世界。</div>
+      </div>
+      <div class="concept-card">
+        <div class="concept-formula">Rₛ = 2GM/c²</div>
+        <div class="concept-name">引力聚集 · Gravitational Pull</div>
+        <div class="concept-title">事件视界汇聚同类灵魂</div>
+        <div class="concept-desc">正如黑洞的史瓦西半径将一切拉向中心，Hypernodes 的热点话题和活跃社区形成了不可抗拒的引力场，将志趣相投的人聚集在一起。</div>
+      </div>
+    </div>
+
+    <!-- Intro -->
+    <div class="intro-section">
+      <div class="section-label">// what is hypernodes</div>
+      <h2>Welcome to Hypernodes</h2>
+      <div class="content">
+        <p>Hypernodes 是一个社交网络应用，融合了多维表达方式——文字、图像、社区——让你以自己的"模式"发现世界、分享自我、连接他人。</p>
+        <ul>
+          <li><strong>发现 (Discover)</strong> — 找到与您兴趣匹配的人和社区</li>
+          <li><strong>分享 (Share)</strong> — 通过多种内容格式自由表达</li>
+          <li><strong>连接 (Connect)</strong> — 与世界各地的人建立真正的联系</li>
+          <li><strong>创造 (Create)</strong> — 围绕任何主题创建或加入社区</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2026 Hypernodes. All rights reserved. &nbsp;·&nbsp; <a href="privacy.html">Privacy</a> &nbsp;·&nbsp; <a href="terms.html">Terms</a> &nbsp;·&nbsp; <a href="support.html">Support</a></p>
+  </div>
+</footer>
+
+<script>
+const p=location.pathname.split('/').pop()||'index.html';
+document.querySelectorAll('.nav-links a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')===p));
+</script>
+</body>
+</html>
