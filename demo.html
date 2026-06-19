@@ -1,0 +1,109 @@
+1|<!DOCTYPE html>
+2|<html lang="en">
+3|<head>
+4|  <meta charset="UTF-8">
+5|  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+6|  <title>Demo Access — Hypernodes</title>
+7|  <meta name="description" content="Hypernodes Demo Access — How to sign up and explore the app.">
+8|  <link rel="icon" href="assets/app-icon.svg" type="image/svg+xml">
+9|  <link rel="stylesheet" href="css/style.css">
+10|</head>
+11|<body>
+12|
+13|<nav>
+14|  <div class="nav-inner">
+15|    <a href="index.html" class="nav-logo">
+16|      <svg viewBox="0 0 200 200" fill="none" width="28" height="28">
+17|        <defs><linearGradient id="g" x1="0" y1="0" x2="200" y2="200"><stop offset="0%" stop-color="#6c63ff"/><stop offset="100%" stop-color="#a855f7"/></linearGradient></defs>
+18|        <rect width="200" height="200" rx="40" fill="url(#g)"/>
+19|        <path d="M64 64h26l20 36 20-36h26l-42 72h-8L64 64z" fill="#fff"/>
+20|        <path d="M130 64h16l-30 72h-16l30-72z" fill="rgba(255,255,255,0.6)"/>
+21|      </svg>
+22|      Hypernodes
+23|    </a>
+24|    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle navigation">
+25|      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+26|    </button>
+27|    <ul class="nav-links">
+28|      <li><a href="index.html">Home</a></li>
+29|      <li><a href="privacy.html">Privacy</a></li>
+30|      <li><a href="terms.html">Terms</a></li>
+31|      <li><a href="support.html">Support</a></li>
+32|      <li><a href="demo.html" class="active">Demo</a></li>
+33|    </ul>
+34|  </div>
+35|</nav>
+36|
+37|<main>
+38|  <div class="container">
+39|    <div class="page-header">
+40|      <h1>Demo Access</h1>
+41|      <p>Try Hypernodes — no invitation code needed</p>
+42|    </div>
+43|
+44|    <div class="demo-box">
+45|      <h3>Getting Started</h3>
+46|      <p>Hypernodes supports sign-up with any email address. Simply download the app from the App Store, open it, and follow the sign-up flow.</p>
+47|      <div class="highlight">
+48|        Any email address works — no special demo account needed
+49|      </div>
+50|      <p style="margin-top: 16px; font-size: 14px; color: var(--text-muted);">
+51|        Apple Review Team: Please use any email address to sign up and explore all features of the app.
+52|      </p>
+53|    </div>
+54|
+55|    <div class="card">
+56|      <div class="card-title">Steps to Explore</div>
+57|      <div class="content">
+58|        <ol>
+59|          <li><strong>Download</strong> — Install Hypernodes from the App Store</li>
+60|          <li><strong>Sign Up</strong> — Tap "Sign Up" and enter any email address. You'll receive a verification code.</li>
+61|          <li><strong>Set Up Profile</strong> — Choose a display name and optionally add a profile photo</li>
+62|          <li><strong>Explore</strong> — Browse communities, create posts, interact with other users, and discover content</li>
+63|        </ol>
+64|      </div>
+65|    </div>
+66|
+67|    <div class="card">
+68|      <div class="card-title">Key Features to Review</div>
+69|      <div class="content">
+70|        <ul>
+71|          <li><strong>Feed</strong> — Browse a personalized feed of content from communities you follow</li>
+72|          <li><strong>Communities</strong> — Discover and join communities based on your interests</li>
+73|          <li><strong>Create</strong> — Post text, images, and interact with other users' content</li>
+74|          <li><strong>Profile</strong> — Customize your profile, view your activity, and manage settings</li>
+75|          <li><strong>Privacy Controls</strong> — Manage who can see your content and interact with you</li>
+76|        </ul>
+77|      </div>
+78|    </div>
+79|
+80|    <div class="card">
+81|      <div class="card-title">Notes for App Review</div>
+82|      <div class="content">
+83|        <p>Please note the following for the review process:</p>
+84|        <ul>
+85|          <li><strong>Email Verification:</strong> A verification code will be sent to the email address you provide. Any email address is acceptable.</li>
+86|          <li><strong>Demo Duration:</strong> The full demo account experience is available immediately after sign-up.</li>
+87|          <li><strong>Content Creation:</strong> You can create, edit, and delete your own content freely.</li>
+88|          <li><strong>Account Deletion:</strong> Accounts can be deleted at any time from the profile settings.</li>
+89|        </ul>
+90|      </div>
+91|    </div>
+92|  </div>
+93|</main>
+94|
+95|<footer>
+96|  <div class="container">
+97|    <p>&copy; 2026 Hypernodes. All rights reserved. | <a href="privacy.html">Privacy</a> | <a href="terms.html">Terms</a> | <a href="support.html">Support</a></p>
+98|  </div>
+99|</footer>
+100|
+101|<script>
+102|  const page = location.pathname.split('/').pop() || 'index.html';
+103|  document.querySelectorAll('.nav-links a').forEach(a => {
+104|    a.classList.toggle('active', a.getAttribute('href') === page);
+105|  });
+106|</script>
+107|</body>
+108|</html>
+109|
